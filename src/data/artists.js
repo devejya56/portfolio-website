@@ -1,5 +1,24 @@
 export const artists = [
   {
+    id: 'papon-live',
+    name: 'PAPON LIVE',
+    year: '2026',
+    coverImage: '/src/assets/papon/5427.jpg',
+    description: 'A cinematic documentation of Artist Papon\'s live performance. Captured with an emphasis on atmospheric lighting and raw emotional energy.',
+    gallery: [
+      '/src/assets/papon/5427.jpg',
+      '/src/assets/papon/5435.jpg',
+      '/src/assets/papon/5449.jpg',
+      '/src/assets/papon/5626.jpg',
+      '/src/assets/papon/5704.jpg',
+      '/src/assets/papon/5759.jpg',
+      '/src/assets/papon/5731.jpg',
+      '/src/assets/papon/5944.jpg',
+      '/src/assets/papon/5388.jpg',
+      '/src/assets/papon/5548.jpg'
+    ]
+  },
+  {
     id: 'rhythm-chaos',
     name: 'RHYTHM & CHAOS',
     year: '2025',
