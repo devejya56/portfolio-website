@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Upload, X, Check, Trash2, Layout, User, Briefcase, Camera } from 'lucide-react';
 import { saveLocalData, getLocalData, deleteLocalData, STORAGE_KEYS } from '../data/persistence';
-import ExportUtility from '../components/ExportUtility';
 
 const Admin = () => {
   const [activeTab, setActiveTab] = useState('upload'); // 'upload' or 'manage'
@@ -280,8 +279,6 @@ const Admin = () => {
                  ))
                )}
              </div>
-
-             <ExportUtility />
           </div>
         )}
       </div>

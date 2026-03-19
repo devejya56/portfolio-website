@@ -134,16 +134,6 @@ body { cursor: none; overflow-x: hidden; }
 .text-outline { -webkit-text-stroke: 1.5px var(--text); color: transparent; transition: all 0.5s ease; }
 .text-outline:hover { -webkit-text-stroke: 1.5px var(--accent); }
 
-.hero-frame-text {
-  font-family: var(--fs); /* Elegant serif */
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: 2px;
-  -webkit-text-stroke: 0;
-  color: var(--text);
-  margin-left: 0.1em;
-}
-
 .btn-premium {
   padding: 20px 40px; border: 1px solid rgba(255, 252, 242, 0.2); font-family: var(--fm); font-size: 10px;
   letter-spacing: 4px; color: var(--text); text-decoration: none; display: inline-flex; align-items: center; gap: 15px;
