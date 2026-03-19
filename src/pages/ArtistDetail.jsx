@@ -16,12 +16,6 @@ const ArtistDetail = () => {
 
   if (!artist) return <div className="page-container" style={{ textAlign: 'center', padding: '120px' }}><h1 className="hero-title">NOT FOUND</h1><Link to="/artists" className="btn-premium">Back to Archive</Link></div>
 
-  const metadata = [
-    { icon: <Camera size={14} />, label: 'GEAR', val: 'ARRI ALEXA MINI / 35mm' },
-    { icon: <MapPin size={14} />, label: 'LOC', val: 'NEW DELHI / 28.6° N' },
-    { icon: <User size={14} />, label: 'CLIENT', val: artist.id === 'rhythm-chaos' ? 'SONY MUSIC' : 'EDITORIAL' },
-    { icon: <Hash size={14} />, label: 'ID', val: `LF_${artist.id.toUpperCase()}_025` }
-  ]
 
   return (
     <motion.div 
@@ -33,22 +27,15 @@ const ArtistDetail = () => {
     >
       <section className="artist-detail-hero">
         <div className="detail-header">
-          <Link to="/artists" className="btn-back interactive">
-            <ArrowLeft size={16} /> Archive
-          </Link>
-          <span className="section-label">Project // {artist.year}</span>
+          <div className="detail-nav-bar" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '60px' }}>
+            <Link to="/artists" className="btn-back interactive" style={{ marginBottom: 0 }}>
+              <ArrowLeft size={16} /> Archive
+            </Link>
+            <span className="section-label" style={{ marginBottom: 0 }}>Project // {artist.year}</span>
+          </div>
           <h1 className="detail-title">{artist.name}</h1>
           <p className="detail-desc">{artist.description}</p>
           
-          <div className="detail-metadata-bar">
-            {metadata.map((m, i) => (
-              <div key={i} className="meta-pill">
-                <span className="meta-icon">{m.icon}</span>
-                <span className="meta-label">{m.label}:</span>
-                <span className="meta-value">{m.val}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
