@@ -144,7 +144,7 @@ const Home = () => (
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
           LENS <span style={{ color: 'var(--accent)', display: 'inline-block' }}>&</span><br />
-          <span className="text-outline" style={{ display: 'inline-block' }}>FRAME</span>
+          <span className="hero-frame-text" style={{ display: 'inline-block' }}>FRAME</span>
         </motion.h1>
         <motion.div 
           initial={{ opacity: 0 }}
